@@ -1,2 +1,2 @@
-# limo-be
-limo backend service
+# limo-be-springboot
+limo backend system on springboot
