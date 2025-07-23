@@ -82,7 +82,6 @@
 			<groupId>com.azure</groupId>
 			<artifactId>azure-identity</artifactId>
 			<version>1.16.3</version>
-			<scope>compile</scope>
 		</dependency>
 		<!-- Azure Event Hubs Checkpoint Store for Blob Storage (체크포인트 저장용) -->
 		<dependency>
