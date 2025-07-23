@@ -1,5 +1,6 @@
 /Users/robotm4/workspace/kt/gtmtechon/limo-be/src/main/java/com/handson/gtmtech/limo/be/LimoBeApplication.java
 /Users/robotm4/workspace/kt/gtmtechon/limo-be/src/main/java/com/handson/gtmtech/limo/be/config/BlobStorageConfig.java
+/Users/robotm4/workspace/kt/gtmtechon/limo-be/src/main/java/com/handson/gtmtech/limo/be/config/WebConfig.java
 /Users/robotm4/workspace/kt/gtmtechon/limo-be/src/main/java/com/handson/gtmtech/limo/be/controller/BlobStorageController.java
 /Users/robotm4/workspace/kt/gtmtechon/limo-be/src/main/java/com/handson/gtmtech/limo/be/controller/CctvEventImageController.java
 /Users/robotm4/workspace/kt/gtmtechon/limo-be/src/main/java/com/handson/gtmtech/limo/be/controller/DeviceController.java

@@ -71,6 +71,38 @@
         	<artifactId>azure-storage-blob</artifactId>
         	<version>12.25.0</version>
     	</dependency>
+		<!-- Azure Event Hubs Client Library -->
+		<dependency>
+			<groupId>com.azure</groupId>
+			<artifactId>azure-messaging-eventhubs</artifactId>
+			<version>5.17.0</version> <!-- 최신 안정 버전 확인 -->
+		</dependency>
+		<!-- Azure Identity (인증용, Managed Identity 사용 시 유용) -->
+		<dependency>
+			<groupId>com.azure</groupId>
+			<artifactId>azure-identity</artifactId>
+			<version>1.14.7</version> <!-- 업그레이드: 보안 취약점 해결 -->
+		</dependency>
+		<!-- Azure Event Hubs Checkpoint Store for Blob Storage (체크포인트 저장용) -->
+		<dependency>
+			<groupId>com.azure</groupId>
+			<artifactId>azure-messaging-eventhubs-checkpointstore-blob</artifactId>
+			<version>1.17.0</version> <!-- 최신 안정 버전 확인 -->
+		</dependency>
+		<!-- Lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.24</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		<!-- Jackson Datatype for Java 8 Time API -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.datatype</groupId>
+			<artifactId>jackson-datatype-jsr310</artifactId>
+			<version>2.15.2</version>
+		</dependency>
 
 	</dependencies>
 

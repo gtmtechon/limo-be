@@ -4,6 +4,7 @@ com/handson/gtmtech/limo/be/controller/DeviceController.class
 com/handson/gtmtech/limo/be/repository/DeviceRepository.class
 com/handson/gtmtech/limo/be/entity/DeviceStatus.class
 com/handson/gtmtech/limo/be/service/BlobStorageService.class
+com/handson/gtmtech/limo/be/config/WebConfig.class
 com/handson/gtmtech/limo/be/LimoBeApplication.class
 com/handson/gtmtech/limo/be/repository/CctvEventImageRepository.class
 com/handson/gtmtech/limo/be/config/BlobStorageConfig.class
