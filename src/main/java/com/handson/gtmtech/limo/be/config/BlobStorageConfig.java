@@ -29,7 +29,7 @@ public class BlobStorageConfig {
 
     @Bean
     public BlobContainerClient blobContainerClient(BlobServiceClient blobServiceClient,
-                                                    @Value("${azure.storage.container.name}") String containerName) {
+                 @Value("${azure.storage.container.name}") String containerName) {
         return blobServiceClient.getBlobContainerClient(containerName);
     }
 }
