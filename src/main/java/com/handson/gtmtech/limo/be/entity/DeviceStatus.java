@@ -5,9 +5,12 @@ import lombok.Data;
 
 import java.time.OffsetDateTime;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 @Entity
 @Table(name = "device_status")
 @Data
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class DeviceStatus {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

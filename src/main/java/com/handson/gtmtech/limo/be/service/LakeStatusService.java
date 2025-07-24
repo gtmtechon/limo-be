@@ -43,6 +43,6 @@ public class LakeStatusService {
     public List<LakeStatus> getHourlyLakeStatus(String sensorId) {
         OffsetDateTime now = OffsetDateTime.now();
         OffsetDateTime oneHourAgo = now.minusHours(1);
-        return lakeStatusRepository.findBySensorIdAndTimestampBetweenOrderByTimestampAsc(sensorId, oneHourAgo, now);
+        return lakeStatusRepository.findBySensorIdAndTtimestampBetweenOrderByTtimestampAsc(sensorId, oneHourAgo, now);
     }
 }

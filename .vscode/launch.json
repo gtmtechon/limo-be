@@ -1,12 +1,6 @@
 {
     "configurations": [
-        {
-            "type": "java",
-            "name": "LimoBeApplication",
-            "request": "launch",
-            "mainClass": "com.handson.gtmtech.limo.be.LimoBeApplication",
-            "projectName": "limo-be"
-        },
+     
         {
             "type": "java",
             "name": "Launch Spring Boot App (Dev Profile)",
