@@ -13,10 +13,10 @@ import org.springframework.beans.factory.annotation.Value;
 @Configuration
 public class BlobStorageConfig {
 
-    @Value("${azure.storage.account-name}")
+    @Value("${azure.storage.account.name}")
     private String accountName;
 
-    @Value("${azure.storage.sas-token}")
+    @Value("${azure.storage.sas.token}")
     private String sasToken;
 
     @Bean
@@ -29,7 +29,7 @@ public class BlobStorageConfig {
 
     @Bean
     public BlobContainerClient blobContainerClient(BlobServiceClient blobServiceClient,
-                                                    @Value("${azure.storage.container-name}") String containerName) {
+                                                    @Value("${azure.storage.container.name}") String containerName) {
         return blobServiceClient.getBlobContainerClient(containerName);
     }
 }
