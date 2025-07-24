@@ -81,12 +81,7 @@
 		<dependency>
 			<groupId>com.azure</groupId>
 			<artifactId>azure-identity</artifactId>
-<<<<<<< HEAD
-			<version>1.16.3</version> <!-- 업그레이드: 보안 취약점 해결 -->
-=======
 			<version>1.16.3</version>
-			<scope>compile</scope>
->>>>>>> d1bff53 (phase1.clear)
 		</dependency>
 		<!-- Azure Event Hubs Checkpoint Store for Blob Storage (체크포인트 저장용) -->
 		<dependency>
