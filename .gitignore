@@ -3,4 +3,4 @@ mvnw.cmd
 .mvn/wrapper/maven-wrapper.properties
 .mvn/wrapper/maven-wrapper.jar
 target/
-application-dev.properties
+src/main/resources/application-dev.properties
