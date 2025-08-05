@@ -10,11 +10,19 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // 모든 경로에 대해 CORS 허용
-                .allowedOrigins("http://localhost:8081", 
-                "limoapi-bkd5e9huhja0defa.koreacentral-01.azurewebsites.net","http://localhost:8080",
-                "https://limoweb.azurewebsites.net") // Vue.js 앱의 Origin 허용
+                .allowedOrigins("*") // 모든 Origin을 허용
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // 허용할 HTTP 메서드
-                .allowedHeaders("*") // 모든 헤더 허용
-                .allowCredentials(true); // 자격 증명(쿠키, 인증 헤더 등) 허용
+                .allowedHeaders("*"); // 모든 헤더 허용
+                // .allowCredentials(true); // 자격 증명(쿠키, 인증 헤더 등)을 허용할 때는 *을 사용할 수 없음
     }
+
+    // public void addCorsMappings(CorsRegistry registry) {
+    //     registry.addMapping("/**") // 모든 경로에 대해 CORS 허용
+    //             .allowedOrigins("http://localhost:8081", 
+    //             "limoapi-bkd5e9huhja0defa.koreacentral-01.azurewebsites.net","http://localhost:8080",
+    //             "https://limoweb.azurewebsites.net") // Vue.js 앱의 Origin 허용
+    //             .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // 허용할 HTTP 메서드
+    //             .allowedHeaders("*") // 모든 헤더 허용
+    //             .allowCredentials(true); // 자격 증명(쿠키, 인증 헤더 등) 허용
+    // }
 }
