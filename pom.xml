@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.handson.gtmtech</groupId>
-	<artifactId>limo-be</artifactId>
+	<artifactId>limo-be-default</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>limo-be</name>
+	<name>limo-be-default</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -20,12 +20,7 @@
 	<developers>
 		<developer/>
 	</developers>
-	<scm>
-		<connection/>
-		<developerConnection/>
-		<tag/>
-		<url/>
-	</scm>
+
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -66,29 +61,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
-        	<groupId>com.azure</groupId>
-        	<artifactId>azure-storage-blob</artifactId>
-        	<version>12.25.0</version>
-    	</dependency>
-		<!-- Azure Event Hubs Client Library -->
-		<dependency>
-			<groupId>com.azure</groupId>
-			<artifactId>azure-messaging-eventhubs</artifactId>
-			<version>5.17.0</version> <!-- 최신 안정 버전 확인 -->
-		</dependency>
-		<!-- Azure Identity (인증용, Managed Identity 사용 시 유용) -->
-		<dependency>
-			<groupId>com.azure</groupId>
-			<artifactId>azure-identity</artifactId>
-			<version>1.16.3</version>
-		</dependency>
-		<!-- Azure Event Hubs Checkpoint Store for Blob Storage (체크포인트 저장용) -->
-		<dependency>
-			<groupId>com.azure</groupId>
-			<artifactId>azure-messaging-eventhubs-checkpointstore-blob</artifactId>
-			<version>1.17.0</version> <!-- 최신 안정 버전 확인 -->
-		</dependency>
+
 		<!-- Lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -103,18 +76,6 @@
 			<artifactId>jackson-datatype-jsr310</artifactId>
 			<version>2.15.2</version>
 		</dependency>
-
-		 <!-- Spring Boot WebFlux for reactive web applications -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
-        </dependency>
-
-        <!-- Spring Data Redis for Redis integration with reactive support -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
 
         <!-- Lombok for boilerplate code reduction (getters, setters, etc.) -->
         <dependency>
